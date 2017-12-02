@@ -1,0 +1,20 @@
+1. 安装Jupyter:
+    pip install jupyter
+    pip install pyQT5
+    pip install numpy
+    pip install pandas
+    pip install scikit-learn
+2. 修改Jupyter Notebook密码：
+    from notebook.auth import passwd
+    passwd()
+    生成"sha1:密文"
+3. 修改Jupyter Notebook配置：
+    进入虚拟环境 workon data
+    执行创建配置文件命令 jupyter-notebook --generate-config
+    生成配置文件位于 ~/.jupyter/jupyter_notebook_config.py
+4. 修改配置文件内容为下：
+    c.NotebookApp.ip='*'  # 允许所有ip地址访问Jupyter Notebook服务器
+    c.NotebookApp.port='8888'  # 指定Jupyter Notebook服务器端口
+    c.NotebookApp.open_browser= False  # 开启Jupyter Notebook服务器时不打开浏览器
+    c.NotebookApp.notebook_dir= '/home/用户名/data'  # 默认访问目录，即存储Jupyter Notebook文件的路径
+    c.NotebookApp.password= u'sha1:第二步生成的密文'  # 登录密码
