@@ -1,0 +1,9 @@
+1. 安装virtualenvwrapper：
+    pip install virtualenv
+    pip install virtualenvwrapper
+2. 添加环境变量，编辑~/.bashrc，添加以下三行：
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3  # 指定虚拟环境中默认的Python版本
+    export WORKON_HOME=$HOME/.virtualenvs  # 指定虚拟环境默认存放路径
+    export /usr/local/bin/virtualenvwrapper.sh
+3. source .bashrc  使环境变量生效
+4. mkvirtualenv [-a project_path] [-i package] [-p interpreter][-r requirements_file] [virtualenv options] ENVNAME
