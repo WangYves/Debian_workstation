@@ -1,3 +1,8 @@
+#只添加一个软件源即可，多源混用会出问题。
+#更新/etc/apt/sources.list 后，执行apt update 来更新本地缓存。
+#默认注释掉软件源代码，提高apt update速度，如有需要可以自行取消注释。
+
+#清华源
 deb https://mirrors.tuna.tsinghua.edu.cn/debian-security/ stretch/updates main contrib non-free
 #deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security/ stretch/updates main contrib non-free
 
@@ -6,4 +11,14 @@ deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch main contrib non-free
 
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-updates main contrib non-free
 #deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ stretch-updates main contrib non-free
+
+#中科大源
+deb https://mirrors.ustc.edu.cn/debian/ stretch main contrib non-free
+#deb-src https://mirrors.ustc.edu.cn/debian/ stretch main contrib non-free
+
+deb https://mirrors.ustc.edu.cn/debian/ stretch-updates main contrib non-free
+#deb-src https://mirrors.ustc.edu.cn/debian/ stretch-updates main contrib non-free
+
+deb https://mirrors.ustc.edu.cn/debian-security/ stretch/updates main contrib non-free
+#deb-src https://mirrors.ustc.edu.cn/debian-security/ stretch/updates main contrib non-free
 
