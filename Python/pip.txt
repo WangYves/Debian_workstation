@@ -1,0 +1,7 @@
+1. 在当前用户家目录下创建文件夹.pip，并进入:
+    mkdir .pip
+    cd .pip
+2. 创建文件pip.conf,添加以下内容,将pypi源设置为清华源:
+
+[Global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple/
