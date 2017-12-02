@@ -1,0 +1,5 @@
+修改Anaconda的conda源为清华开源软件镜像
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --set show_channels_urls yes
