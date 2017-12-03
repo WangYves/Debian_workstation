@@ -1,0 +1,13 @@
+1. 修改DockerHub镜像，在配置文件 /etc/docker/daemon.json 中加入：
+
+    {
+      "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"]
+    }
+
+2. 重新启动dockerd：
+    service docker restart
+
+
+3. 备选镜像
+    https://hub-mirror.c.163.com
+    https://registry.docker-cn.com
