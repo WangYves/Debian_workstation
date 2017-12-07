@@ -1,0 +1,5 @@
+dpkg --add-architecture i386
+sudo apt update
+
+apt install steam:i386
+apt install libgl1-mesa-dri:i386 libgl1-mesa-glx:i386 libc6:i386 
