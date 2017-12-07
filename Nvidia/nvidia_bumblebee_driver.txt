@@ -1,0 +1,11 @@
+apt update && apt dist-upgrade
+apt install nvidia-driver bumblebee-nvidia
+
+vi /etc/bumblebee/bumblebee.conf
+Driver=nvidia
+KernelDriver=nvidia-current
+
+shutdown -r now
+
+optirun glxinfo | grep OpenGL
+
