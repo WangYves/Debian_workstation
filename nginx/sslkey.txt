@@ -1,0 +1,22 @@
+openssl genrsa -des3 -passout pass:x -out ssl.pass.key 2048
+openssl rsa -passin pass:x -in ssl.pass.key -out ssl.key
+
+openssl req -new -key ssl.key -out ssl.csr
+
+openssl x509 -req -days 3650 -in ssl.csr -signkey ssl.key -out ssl.crt
+
+
+
+
+########################
+Letsencrypt
+
+apt-get install letsencrypt
+letsencrypt certonly
+
+wget https://dl.eff.org/certbot-auto
+chmod a+x certbot-auto
+certbot-auto certonly
+
+ssl_certificate /path/to/your/fullchain.pem;
+ssl_certificate_key /path/to/your/privkey.pem;
