@@ -1,0 +1,5 @@
+https://pinyin.sogou.com/linux/?r=pinyin
+词库同步功能
+dpkg -i sougoupinyin-xxxx.deb
+
+apt install -f
