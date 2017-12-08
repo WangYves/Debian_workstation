@@ -1,0 +1,4 @@
+hwclock -w --localtime
+
+vi /etc/adjtime
+UTC-->LOCAL
