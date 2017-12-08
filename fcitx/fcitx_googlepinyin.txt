@@ -1,0 +1,3 @@
+apt install fcitx-googlepinyin
+
+fontsize:15
